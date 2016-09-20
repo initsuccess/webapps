@@ -5,7 +5,12 @@
   "main": "appcode.js",
   "scripts": {"start": "node appcode.js"},
   "engines": {"node": "6.5.0"},
-  "dependencies": {"express": "4.14.0"},
+  "dependencies": {
+    "pg": "4.x",
+    "ejs": "2.3.3",
+    "express": "4.14.0",
+    "cool-ascii-faces": "1.3.3"
+  },
   "test": "echo \"Error: no test specified\" && exit 1",
   "repository": {
   "type": "git",
