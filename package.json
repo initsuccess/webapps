@@ -3,37 +3,60 @@
   "version": "1.0.0",
   "description": "Simple Web Applications",
   "main": "appcode.js",
-  "scripts": {"start": "node appcode.js"},
-  "engines": {"node": "6.5.0"},
+  "scripts": {
+    "start": "node appcode.js"
+  },
+  "engines": {
+    "node": "6.5.0"
+  },
   "dependencies": {
-    "pg": "4.x",
-    "ejs": "2.3.3",
+    "body-parser": "^1.15.2",
+    "cool-ascii-faces": "1.3.3",
     "express": "4.14.0",
-    "cool-ascii-faces": "1.3.3"
+    "jsrender": "^0.9.80",
+    "pg": "4.x"
   },
   "test": "echo \"Error: no test specified\" && exit 1",
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/initsuccess/webapps.git"
+    "type": "git",
+    "url": "git+https://github.com/initsuccess/webapps.git"
   },
   "author": "initsuccess",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/initsuccess/webapps/issues"
   },
-  "Route": {"path": "/:app_ID"},
-  "Request":[ 
-	
-	{"URL": "https://web-apps.herokuapp.com/db"},
-	{"URL": "https://web-apps.herokuapp.com/Mail"},
-	{"URL": "https://web-apps.herokuapp.com/Games"},
-	{"URL": "https://web-apps.herokuapp.com/SyncPad"}
-],
-  "req.params":[
-	{ "app_ID": "Mail"},
-	{ "app_ID": "Games"},
-	{ "app_ID": "SyncPad"},
-	{ "app_ID": "db"}
-]
-
+  "Route": {
+    "path": "/:app_ID"
+  },
+  "Request": [
+    {
+      "URL": "https://web-apps.herokuapp.com/db"
+    },
+    {
+      "URL": "https://web-apps.herokuapp.com/Mail"
+    },
+    {
+      "URL": "https://web-apps.herokuapp.com/Games"
+    },
+    {
+      "URL": "https://web-apps.herokuapp.com/SyncPad"
+    }
+  ],
+  "req.params": [
+    {
+      "app_ID": "Mail"
+    },
+    {
+      "app_ID": "Games"
+    },
+    {
+      "app_ID": "SyncPad"
+    },
+    {
+      "app_ID": "db"
+    }
+  ],
+  "homepage": "https://github.com/initsuccess/webapps#readme",
+  "devDependencies": {}
 }
