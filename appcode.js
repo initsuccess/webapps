@@ -10,10 +10,10 @@ console.log('Server running at http://localhost:' + process.env["PORT"]);
 });
 */
 
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
 var pg = require('pg');
-
+app.engine('html',require('ejs').renderfile);
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM test_table', function(err, result) {

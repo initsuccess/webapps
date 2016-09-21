@@ -23,6 +23,8 @@
   },
   "Route": {"path": "/:app_ID"},
   "Request":[ 
+	
+	{"URL": "https://web-apps.herokuapp.com/db"},
 	{"URL": "https://web-apps.herokuapp.com/Mail"},
 	{"URL": "https://web-apps.herokuapp.com/Games"},
 	{"URL": "https://web-apps.herokuapp.com/SyncPad"}
@@ -30,7 +32,8 @@
   "req.params":[
 	{ "app_ID": "Mail"},
 	{ "app_ID": "Games"},
-	{ "app_ID": "SyncPad"}
+	{ "app_ID": "SyncPad"},
+	{ "app_ID": "db"}
 ]
 
 }
